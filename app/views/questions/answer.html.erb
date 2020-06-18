@@ -1,5 +1,14 @@
-<p><%= params[:question] %></p>
 
-<p><%= @something %></p>
+<h1>Stupid couching</h1>
+
+<div class="userQuestion">
+<p><%= params[:question] %></p>
+<p>-You</p>
+</div>
+
+<div class="computerAnswer">
+<p><strong><%= @something %></strong></p>
+<p>-Your coach</p>
+</div>
 
 <%= link_to "Ask a question", ask_path %>
